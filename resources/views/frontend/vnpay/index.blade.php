@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <div class="header clearfix">
-            <h3 class="text-muted">VNPAY DEMO</h3>
+            <h3 class="text-muted">VNPAY</h3>
         </div>
         <h3>Tạo mới đơn hàng</h3>
         <div class="table-responsive">
@@ -46,7 +46,8 @@
                 </div>
                 <div class="form-group">
                     <label for="order_desc">Nội dung thanh toán</label>
-                    <textarea class="form-control" cols="20" id="order_desc" name="order_desc" rows="2">Noi dung thanh toan</textarea>
+                    <textarea class="form-control" cols="20" id="order_desc" name="order_desc"
+                        rows="2">Noi dung thanh toan</textarea>
                 </div>
                 <div class="form-group">
                     <label for="bank_code">Ngân hàng</label>
@@ -92,7 +93,7 @@
             &nbsp;
         </p>
         <footer class="footer">
-            <p>&copy; VNPAY 2015</p>
+            <p>&copy; VNPAY </p>
         </footer>
     </div>
     <link href="https://sandbox.vnpayment.vn/paymentv2/lib/vnpay/vnpay.css" rel="stylesheet" />

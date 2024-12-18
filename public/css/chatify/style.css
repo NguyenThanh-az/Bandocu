@@ -138,9 +138,9 @@ body {
 .messenger-messagingView .m-body {
   position: relative;
   padding-top: 15px;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: auto;
-  height: 90%;
+  height: 100%;
 }
 .m-header {
   font-weight: 600;

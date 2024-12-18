@@ -15,13 +15,17 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- Notifications start --}}
-    {{-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> --}}
-    {{-- <link rel="stylesheet" type="text/css"
+    {{--
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    --}}
+    {{--
+    <link rel="stylesheet" type="text/css"
         href="https://skywalkapps.github.io/bootstrap-notifications/stylesheets/bootstrap-notifications.css"> --}}
     {{-- Notifications end --}}
 
-    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> --}}
+    {{--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> --}}
 
 
 </head>
@@ -110,8 +114,8 @@
                 </li>
                 <li class="item-manage">
                     <a href="#" class="link-manage pay d-flex align-items-center">
-                        <img src="/assets/img/escrow.svg" alt="" class="img-manage" width="24px"
-                            height="24px" style="object-fit: contain; margin-right: 12px;">
+                        <img src="/assets/img/escrow.svg" alt="" class="img-manage" width="24px" height="24px"
+                            style="object-fit: contain; margin-right: 12px;">
                         <span>Đơn mua</span>
                         <span class="font-weight-bold ml-auto link-now">Liên kết ngay <i
                                 class="fa-solid fa-angle-right ml-1"></i></span>
@@ -124,23 +128,23 @@
                 </h3>
                 <li class="item-manage">
                     <a href="#" class="link-manage d-flex align-items-center">
-                        <img src="/assets/img/escrow_buy_orders.svg" alt="" class="img-manage"
-                            width="24px" height="24px" style="object-fit: contain; margin-right: 12px;">
+                        <img src="/assets/img/escrow_buy_orders.svg" alt="" class="img-manage" width="24px"
+                            height="24px" style="object-fit: contain; margin-right: 12px;">
                         <span>Đơn mua</span>
                     </a>
                 </li>
                 <li class="item-manage">
                     <a href="#" class="link-manage d-flex align-items-center">
-                        <img src="/assets/img/escrow_buy_orders.svg" alt="" class="img-manage"
-                            width="24px" height="24px" style="object-fit: contain; margin-right: 12px;">
+                        <img src="/assets/img/escrow_buy_orders.svg" alt="" class="img-manage" width="24px"
+                            height="24px" style="object-fit: contain; margin-right: 12px;">
                         <span>Đơn mua</span>
                         <div class="label-new">Mới</div>
                     </a>
                 </li>
                 <li class="item-manage">
                     <a href="#" class="link-manage pay d-flex align-items-center">
-                        <img src="/assets/img/escrow.svg" alt="" class="img-manage" width="24px"
-                            height="24px" style="object-fit: contain; margin-right: 12px;">
+                        <img src="/assets/img/escrow.svg" alt="" class="img-manage" width="24px" height="24px"
+                            style="object-fit: contain; margin-right: 12px;">
                         <span>Đơn mua</span>
                         <span class="font-weight-bold ml-auto link-now">Liên kết ngay <i
                                 class="fa-solid fa-angle-right ml-1"></i></span>
@@ -156,19 +160,18 @@
             <div class="row">
                 <div class="col-lg-8 text-white">
                     <p style="margin-bottom: 5px;
-                    ">Designed by Le Minh Thang</p>
-                    <p>&copy; 2023 Stu2Hand. All rights reserved.</p>
+                    ">Designed by Group 10</p>
+                    <p>&copy; 2024 CDIO4</p>
                 </div>
                 <div class="col-lg-4">
                     <div class="item-footer">
                         <h3 class="title-footer text-white">
-                            WEBSITE BÁN ĐỒ CŨ CHO SINH VIÊN
+                            WEBSITE MUA BÁN ĐỒ CŨ
                         </h3>
                         <ul class="d-flex">
                             <li class="mr-2">
                                 <a href="#">
-                                    <img src="{{ asset('assets/img/stu2hand_logo.png') }}" alt=""
-                                        width="100%" height="45px">
+                                    <img src="{{ asset('assets/img/logo.png') }}" alt="" width="100%" height="45px">
                                 </a>
                             </li>
                         </ul>
@@ -247,7 +250,8 @@
 
     <script src="{{ asset('theme_admin/js/popper.min.js') }}"></script>
 
-    {{-- <script src="{{ asset('theme_admin/js/bootstrap.min.js') }}"></script> --}}
+    {{--
+    <script src="{{ asset('theme_admin/js/bootstrap.min.js') }}"></script> --}}
 
     <script src="{{ asset('assets/css/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') }}"></script>
 
@@ -263,8 +267,8 @@
     {{-- Xử lý alert form delete, submit start --}}
 
     <script type="text/javascript">
-        $(function() {
-            $(document).on('click', '#delete_alert', function(e) {
+        $(function () {
+            $(document).on('click', '#delete_alert', function (e) {
                 e.preventDefault();
                 var link = $(this).attr("href");
                 // console.log(link);
@@ -286,7 +290,7 @@
             })
         });
 
-        $('#alert_form_submit').submit(function(e) {
+        $('#alert_form_submit').submit(function (e) {
             e.preventDefault();
             Swal.fire({
                 title: 'Bạn có muốn lưu dữ liệu không ?',
@@ -303,7 +307,7 @@
         });
 
         // Gọi model xem chi tiết đơn hàng start
-        $(".js_order_item").click(function(event) {
+        $(".js_order_item").click(function (event) {
 
             // alert("Nhấn chi tiết")
             event.preventDefault();
@@ -314,7 +318,7 @@
 
             $.ajax({
                 url: url,
-            }).done(function(result) {
+            }).done(function (result) {
                 console.log(result);
                 if (result) {
                     $("#md_content").html('').append(result);
@@ -323,7 +327,7 @@
         });
         // Gọi model xem chi tiết đơn hàng end
 
-        $(".notification-icon").click(function(event) {
+        $(".notification-icon").click(function (event) {
             // Thực hiện hành động bạn muốn khi biểu tượng được click
             console.log("Biểu tượng thông báo đã được click!");
             // event.preventDefault();
@@ -334,7 +338,7 @@
     {{-- Xử lý alert form delete, submit end --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             var notificationsWrapper = $('.dropdown-notifications');
             var notificationsToggle = notificationsWrapper.find('a[data-toggle]');
             var notificationsCountElem = notificationsToggle.find('i[data-count]');
@@ -350,9 +354,9 @@
             $.ajax({
                 method: 'GET',
                 url: '{{ route('getData') }}',
-                success: function(response) {
+                success: function (response) {
                     var messages = response.messages;
-                    messages.forEach(function(message) {
+                    messages.forEach(function (message) {
                         var timestamp = moment(message.created_at).fromNow();
                         var newNotificationHtml = `
                             <li class="notification active">
@@ -379,21 +383,21 @@
                         notificationsWrapper.show();
                     });
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error('Lỗi khi lấy dữ liệu:', error);
                 }
             });
 
             var channel2 = pusher.subscribe('my-channel');
-            channel2.bind('my-event', function(data) {
+            channel2.bind('my-event', function (data) {
                 notifications.empty();
                 $.ajax({
                     method: 'GET',
                     url: '/getData',
                     data: {},
-                    success: function(response) {
+                    success: function (response) {
                         var messages = response.messages;
-                        messages.forEach(function(message) {
+                        messages.forEach(function (message) {
                             var timestamp = moment(message.created_at).fromNow();
                             var newNotificationHtml = `
                             <li class="notification active">
@@ -422,7 +426,7 @@
                             notificationsWrapper.show();
                         });
                     },
-                    error: function(error) {
+                    error: function (error) {
                         console.error('Lỗi khi lấy dữ liệu:', error);
                     }
                 });
@@ -439,13 +443,13 @@
             cluster: 'ap1'
         });
         var channel = pusher.subscribe('my-channel');
-        channel.bind('my-event', function(data) {
+        channel.bind('my-event', function (data) {
             // alert("Hí ae");
             $.ajax({
                 type: 'GET',
                 url: '/updateunseenmessage',
                 data: {},
-                success: function(data) {
+                success: function (data) {
                     // console.log("Hí ae " + data.unseenCounter);
                     $('.pending-notification').empty();
                     html = ``;
