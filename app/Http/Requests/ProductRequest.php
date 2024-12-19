@@ -48,7 +48,7 @@ class ProductRequest extends FormRequest
             'ward_id.required' => 'Không được để trống!',
             'price.required' => 'Giá sản phẩm được để trống!',
             'price.min' => 'Giá sản phẩm phải lớn hơn 10.000 VNĐ!',
-            'price.max' => 'Giá sản phẩm phải nhỏ hơn 10.000.000.000VNĐ!',
+            'price.max' => 'Giá sản phẩm phải nhỏ hơn 10.000.000.000 VNĐ!',
         ];
     }
 }
