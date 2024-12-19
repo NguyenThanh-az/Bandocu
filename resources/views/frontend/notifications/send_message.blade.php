@@ -12,7 +12,7 @@
         @csrf
         <label for="fname">Avatar</label> <br>
         
-        <label for="fname">Title313git</label>
+        <label for="fname">Title</label>
         <input type="text" id="title" name="title" placeholder="Your Title..">
 
         <label for="subject">Content</label>

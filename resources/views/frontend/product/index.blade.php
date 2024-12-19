@@ -47,7 +47,7 @@
                             <p class="product-detail-price">{{ number_format($productDetail->price, 0, ',', '.') }} đ</p>
                             <div class="btn">
                                 @php
-                                    $user = auth()->user() ?? null; 
+                                    $user = auth()->user() ?? null;
                                     $productDetailOfUser = $productDetail->user->id ?? null;
                                     $products = \Cart::content();
                                     $check = 0;
@@ -118,7 +118,7 @@
 
                                     <div>
                                         <span class="product-info-user-main-icon"><i class="fa-solid fa-shop"></i></span>
-                                        <span>Trường CNTT - CTU</span>
+                                        <span>Trường DTU</span>
                                     </div>
                                     {{-- <div>
                                         <span class="product-info-user-main-icon" style="font-size: 8px;"><i
@@ -217,7 +217,7 @@
                                         </div>
                                         <span>Số để gọi</span>
                                     </a>
-                               
+
                                 </div>
                             @endif
                         </div>
